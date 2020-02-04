@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import React, { Component } from "react";
 
-import { getFilteredLots, getSearching, hasSearchedOnce } from '../selectors'
-import ResultsList from './sidebar/ResultsList';
+import { getFilteredLots, getSearching, hasSearchedOnce } from '../../selectors'
+import ResultsList from './ResultsList';
 import SearchingSpinner from './SearchingSpinner';
 
 const mapStateToProps = state => {

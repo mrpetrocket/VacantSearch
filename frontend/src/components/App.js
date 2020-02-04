@@ -2,8 +2,8 @@ import React from 'react';
 
 import Header from './Header';
 import MapContainer from './map/MapContainer';
-import ResultsPanel from './ResultsPanel';
-import SearchFilters from './SearchFilters';
+import ResultsPanel from './results/ResultsPanel';
+import SearchFilters from './search-filters/SearchFilters';
 
 function App() {
   return (

@@ -7,7 +7,7 @@ export default function Header() {
         <p>Search vacant properties in the Saint Louis, MO area.</p>
       </div>
       <div className="Header__openstl-credits">
-        <p>Made with love by <a href="https://openstl.org/" target="_new">OpenSTL</a></p>
+        <p>Made with <span role="img" aria-label="red heart">❤</span> by <a href="https://openstl.org/" target="_new">OpenSTL</a></p>
       </div>
       <div className='Header__title'>
         <h1>Vacancy Search</h1>        

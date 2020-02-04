@@ -1,9 +1,18 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
-import { fetchFilteredLots } from '../actions';
+import { fetchFilteredLots } from '../../actions';
 import AcreageInput from './AcreageInput';
 import BathSelect from './BathSelect';
-import NeighborhoodSelect from './sidebar/NeighborhoodSelect';
+import { getSearching } from '../../selectors'
+import NeighborhoodSelect from './NeighborhoodSelect';
+
+const mapStateToProps = state => {
+  return {
+    searching: getSearching(state),
+  };
+};
+
+
 class SearchFilters extends Component {
   onSubmitSearchForm(event) {
     event.preventDefault();
@@ -54,7 +63,7 @@ class SearchFilters extends Component {
             <span>-</span>
             <AcreageInput id="form-acres-max" defaultValue="2300" />
           </label>
-          <input type="submit" value="Search" />
+          <input type="submit" value="Search" disabled={this.props.searching} />
         </form>
       </div>
     );
@@ -62,6 +71,6 @@ class SearchFilters extends Component {
 }
 
 export default connect(
-  null,
+  mapStateToProps,
   { fetchFilteredLots },
 )(SearchFilters);

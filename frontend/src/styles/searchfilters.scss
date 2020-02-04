@@ -12,4 +12,9 @@
     color: white;
     padding: 0.4rem;
   }
+  input[type=submit]:disabled {
+    background: gray;
+    color: lightgray;
+    cursor: default;
+  }
 }
