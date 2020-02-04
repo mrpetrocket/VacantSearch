@@ -17,3 +17,7 @@ export const getSearching = state => {
 export const getSelectedTab = state => {
   return state.root.selectedTab;
 }
+
+export const hasSearchedOnce = state => {
+  return state.root.hasSearchedOnce;
+}

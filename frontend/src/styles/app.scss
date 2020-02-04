@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.column {
+  flex: 50%;
+}
+.column.column-resultslist {
+  flex-basis: 500px;
+  flex-grow: 0;
+}
+.header {
+  padding: 0.6rem;
+}
+.header.SearchFilters {
+  border: 0 solid lightgray;
+  border-top-width: 1px;
+}
+.results-and-map {
+  border: 0 solid lightgray;
+  border-top-width: 1px;
+  flex-grow: 1;
+}
+.row {
+  display: flex;
+}

@@ -1,0 +1,15 @@
+.SearchFilters {
+  * {
+    margin-left: 0.6rem;
+  }
+  label, input[type=submit] {
+    margin-left: 1.8rem;
+  }
+  input[type=submit] {
+    background: #ff4f37;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding: 0.4rem;
+  }
+}

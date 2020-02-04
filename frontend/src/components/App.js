@@ -1,15 +1,23 @@
-import MapContainer from './map/MapContainer';
 import React from 'react';
-import Sidebar from './sidebar/Sidebar';
-import SidebarContent from './sidebar/SidebarContent';
+
+import Header from './Header';
+import MapContainer from './map/MapContainer';
+import ResultsPanel from './ResultsPanel';
+import SearchFilters from './SearchFilters';
 
 function App() {
   return (
     <div className="App">
-      <MapContainer />
-      <Sidebar>
-        <SidebarContent />
-      </Sidebar>
+      <Header />
+      <SearchFilters />
+      <div className='row results-and-map'>
+        <div className='column'>
+          <MapContainer />
+        </div>
+        <div className='column column-resultslist'>
+          <ResultsPanel />
+        </div>
+      </div>
     </div>
   );
 }

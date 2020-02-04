@@ -11,6 +11,7 @@ import {
 
 const initialState = {
   filteredLots: [],
+  hasSearchedOnce: false,
   map: null,
   // if you change the initial mapStyle here, you must also change it in the MapBox config which is not in this repo.
   mapStyle: mapStyles.STREET,
@@ -33,6 +34,7 @@ function rootReducer (state = initialState, action) {
     return {
       ...state,
       filteredLots: action.payload,
+      hasSearchedOnce: true,
       searching: false,
       selectedTab: tabs.RESULTS,
     };

@@ -1,0 +1,18 @@
+.Header {
+  &__description {
+    align-items: center;
+    display: flex;
+    float: left;
+    height: 100%;
+  }
+  &__openstl-credits {
+    align-items: center;
+    display: flex;
+    float: right;
+    height: 100%;
+  }
+  &__title {
+    flex-grow: 1;
+    text-align: center;
+  }
+}

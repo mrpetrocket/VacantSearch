@@ -25,7 +25,6 @@ class ResultsList extends Component {
             <Result resultItem={result} />
           </ScrollableResult>
         ))}
-        {this.props.results.length === 0 && <p>No matching results. Please try another search</p>}
       </ScrollableList>
     );
   }
