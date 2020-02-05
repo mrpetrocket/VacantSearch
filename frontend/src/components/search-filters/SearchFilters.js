@@ -12,7 +12,6 @@ const mapStateToProps = state => {
   };
 };
 
-
 class SearchFilters extends Component {
   onSubmitSearchForm(event) {
     event.preventDefault();

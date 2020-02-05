@@ -1,18 +1,22 @@
 .Header {
+  display: flex;
+  > div {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
   &__description {
     align-items: center;
     display: flex;
-    float: left;
-    height: 100%;
+    order: 1;
   }
   &__openstl-credits {
     align-items: center;
     display: flex;
-    float: right;
-    height: 100%;
+    justify-content: flex-end;
+    order: 3;
   }
   &__title {
-    flex-grow: 1;
+    order: 2;
     text-align: center;
   }
 }

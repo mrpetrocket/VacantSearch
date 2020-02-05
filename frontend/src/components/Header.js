@@ -9,8 +9,8 @@ export default function Header() {
       <div className="Header__openstl-credits">
         <p>Made with <span role="img" aria-label="red heart">❤</span> by <a href="https://openstl.org/" target="_new">OpenSTL</a></p>
       </div>
-      <div className='Header__title'>
-        <h1>Vacancy Search</h1>        
+      <div className="Header__title">
+        <h1>Vacancy Search</h1>
       </div>
     </div>
   )

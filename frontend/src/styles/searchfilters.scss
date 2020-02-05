@@ -1,6 +1,9 @@
 .SearchFilters {
-  * {
+  form * {
     margin-left: 0.6rem;
+  }
+  form > *:nth-child(1) {
+    margin-left: 0;
   }
   label, input[type=submit] {
     margin-left: 1.8rem;

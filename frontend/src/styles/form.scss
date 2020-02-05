@@ -1,0 +1,39 @@
+
+label {
+  display: inline-block;
+  line-height: 3.4rem !important;
+}
+input,
+select {
+  width: auto;
+  padding: .3rem;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: .3rem;
+}
+input[type="number"]:focus,
+select:focus {
+  border: 1px solid #333;
+}
+input[type="range"] {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+input[type="number"] {
+  width: 10rem;
+}
+input[type="search"] {
+  margin: 0;
+  padding: 0;
+}
+select {
+  margin-bottom: .2rem;
+  padding: .3rem; /* .5rem 1rem */
+}
+/* disabled input style */
+input[type="number"]:disabled {
+  background: #dddddd;
+}
